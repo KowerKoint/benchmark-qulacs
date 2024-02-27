@@ -1,9 +1,11 @@
 import numpy as np
-from qulacs2023 import Circuit, QuantumState, RX, RZ, CNOT
+from qulacs2023 import Circuit, StateVector, RX, RZ, CNOT, initialize
 
 import pytest
 
 nqubits_list = range(4, 26)
+
+initialize()
 
 def first_rotation(circuit, nqubits):
     for k in range(nqubits):
@@ -42,7 +44,7 @@ def build_circuit(nqubits, depth, pairs):
 
 
 def benchfunc_noopt(circuit, nqubits):
-    st = QuantumState(nqubits)
+    st = StateVector(nqubits)
     circuit.update_quantum_state(st)
 
 
