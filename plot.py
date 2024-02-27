@@ -4,8 +4,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from collections import defaultdict
 
-liblist = ["qulacs", "yao", "qiskit", "projectq", "quest", "qibo", "intelqs", "qxsimulator"]
-liblegend = ["Qulacs", "Yao", "Qiskit", "ProjectQ", "PyQuEST-cffi", "Qibo", "Intel-QS", "qxelerator"]
+liblist = ["qulacs", "qulacs2023"]
+liblegend = ["Qulacs", "Qulacs2023"]
 
 
 def load(folder_name):
