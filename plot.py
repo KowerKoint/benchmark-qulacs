@@ -145,7 +145,7 @@ def plot_ratio(dat):
 
 
 if __name__ == "__main__":
-    for folder in ["gpu"]:
+    for folder in ["gpu", "multithread"]:
         dat = load(folder)
 
         plt.figure(figsize=(12, 6))
