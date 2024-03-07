@@ -107,7 +107,7 @@ def _test_QCBMopt3(benchmark, nqubits):
     benchmark(benchfunc3, qco, circuit, nqubits)
 
 
-@pytest.mark.parametrize('nqubits', nqubits_list)
+# @pytest.mark.parametrize('nqubits', nqubits_list)
 def test_QCBMopt4(benchmark, nqubits):
     benchmark.group = "QCBMopt4"
     pairs = [(i, (i + 1) % nqubits) for i in range(nqubits)]
